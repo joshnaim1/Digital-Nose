@@ -3,7 +3,7 @@
 **Digital Nose** is a prototype that shows a **test automation + ML** pipeline for scent classification.
 It uses **synthetic VOC/environment features** (BME688‑style) to train models and includes a **live mock sensor stream** so you can demo real‑time inference.
 
-**NOTE:** This project is still WIP
+**NOTE:** This project is still WIP due to hardware delays
 
 ## Features
 -Created a small synthetic dataset to mimic sensor readings (VOC levels, temperature, humidity) for testing ideas before hardware arrived
