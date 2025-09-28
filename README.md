@@ -1,16 +1,14 @@
-# Digital Nose — Hardware‑Free AI Scent Classifier Prototype
+# Digital Nose - my weird obsession over cologne has led me to this
 
 **Digital Nose** is a prototype that shows a **test automation + ML** pipeline for scent classification.
-It uses **synthetic VOC/environment features** (BME688‑style) to train models and includes a **live mock sensor stream** so you can demo real‑time inference today.
-When the sensor arrives, swap in a real I²C reader and keep the rest unchanged.
+It uses **synthetic VOC/environment features** (BME688‑style) to train models and includes a **live mock sensor stream** so you can demo real‑time inference.
+
+**NOTE:** This project is still WIP
 
 ## Features
-- **Synthetic dataset** (2,400 rows, 8 features) for reproducible experimentation
-- **Reproducible ML pipeline** (SVM, RandomForest, k‑NN with k‑fold CV + test split)
-- **Saved model** (`scent_model.pkl`) + **confusion matrix** image
-- **Live mock stream** (`mock_stream.py`) → **classifier** (`classify_stream.py`) for real‑time predictions
-- **Notebook** (`Digital_Nose_Demo.ipynb`) with clear outputs
-- **One‑page report** (`DIGITAL_NOSE_REPORT.md`) for quick review
+-Created a small synthetic dataset to mimic sensor readings (VOC levels, temperature, humidity) for testing ideas before hardware arrived
+-Built a simple Python workflow to try out a few classifiers (k-NN, RandomForest, SVM) and check accuracy with cross-validation
+-Made a basic demo: a mock stream that outputs “sensor” values and a classifier script that gives live predictions in the terminal
 
 ## Quickstart
 ```bash
