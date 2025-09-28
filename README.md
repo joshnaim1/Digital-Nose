@@ -7,7 +7,9 @@ It uses **synthetic VOC/environment features** (BME688‑style) to train models 
 
 ## Features
 -Created a small synthetic dataset to mimic sensor readings (VOC levels, temperature, humidity) for testing ideas before hardware arrived
+
 -Built a simple Python workflow to try out a few classifiers (k-NN, RandomForest, SVM) and check accuracy with cross-validation
+
 -Made a basic demo: a mock stream that outputs “sensor” values and a classifier script that gives live predictions in the terminal
 
 ## Quickstart
