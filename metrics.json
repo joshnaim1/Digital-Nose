@@ -1,0 +1,23 @@
+{
+  "cv_results": {
+    "knn": {
+      "mean_acc": 0.9099999999999999,
+      "std_acc": 0.010030816714037662
+    },
+    "svm_rbf": {
+      "mean_acc": 0.915,
+      "std_acc": 0.010333930687632371
+    },
+    "rf": {
+      "mean_acc": 0.9200000000000002,
+      "std_acc": 0.008127077132404341
+    }
+  },
+  "test_scores": {
+    "knn": 0.92,
+    "svm_rbf": 0.94,
+    "rf": 0.9216666666666666
+  },
+  "best_model": "svm_rbf",
+  "classification_report": "              precision    recall  f1-score   support\n\n     aquatic      0.993     1.000     0.997       150\n      citrus      0.902     0.860     0.881       150\n      floral      0.872     0.907     0.889       150\n       woody      0.993     0.993     0.993       150\n\n    accuracy                          0.940       600\n   macro avg      0.940     0.940     0.940       600\nweighted avg      0.940     0.940     0.940       600\n"
+}
