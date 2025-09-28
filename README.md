@@ -1,6 +1,6 @@
 # Digital Nose — Hardware‑Free AI Scent Classifier Prototype
 
-**Digital Nose** is a portfolio‑ready, hardware‑agnostic prototype that demonstrates a complete **test automation + ML** pipeline for scent classification.
+**Digital Nose** is a prototype that shows a **test automation + ML** pipeline for scent classification.
 It uses **synthetic VOC/environment features** (BME688‑style) to train models and includes a **live mock sensor stream** so you can demo real‑time inference today.
 When the sensor arrives, swap in a real I²C reader and keep the rest unchanged.
 
