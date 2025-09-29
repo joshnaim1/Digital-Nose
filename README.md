@@ -1,11 +1,11 @@
 # Digital Nose - my weird obsession over cologne has led me to this
 
-**Digital Nose** is a prototype that shows a **test automation + ML** pipeline for scent classification.
-It uses **synthetic VOC/environment features** (BME688‑style) to train models and includes a **live mock sensor stream** so you can demo real‑time inference.
+**Digital Nose** is a WIP project with aspects of test automation and ML classification to identify different colognes/parfumes 
+I plan to use a synthetic VOC/environment (BME688‑style) to train models. Also going to try to add a live mock sensor stream so you can demo real‑time inference.
 
-**NOTE:** This project is still WIP due to hardware delays
+**NOTE:** This project is still WIP due to hardware shipping delays
 
-## Features
+## Features (hardware-free test)
 -Created a small synthetic dataset to mimic sensor readings (VOC levels, temperature, humidity) for testing ideas before hardware arrived
 
 -Built a simple Python workflow to try out a few classifiers (k-NN, RandomForest, SVM) and check accuracy with cross-validation
@@ -46,7 +46,7 @@ digital_nose/
 ```
 
 ## Swap‑In Plan (when hardware arrives)
-1. Write `bme688_reader.py` that reads via I²C and **prints JSON frames** with the same keys used in `mock_stream.py`.
+1. Write `bme688_reader.py` that reads via I²C and prints JSON frames with the same keys used in `mock_stream.py`.
 2. Then run:
    ```bash
    python bme688_reader.py | python classify_stream.py
